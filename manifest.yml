@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Anpr-java
+  host: Anpr-java
+  disk_quota: 1024M
+  services:
+  - Anpr-java-cloudantNoSQLDB
+  - Anpr-java-WorkloadScheduler
